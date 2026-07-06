@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Reza Eftekhari - Projects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .project-card {
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+            }
+            .project-card:hover {
+                transform: scale(1.05);
+            }
+            .project-card .card-img-top,
+            .project-card .card-video-top {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            #modal-media-container .carousel-item img,
+            #modal-media-container .carousel-item video,
+            #modal-media-container .img-fluid,
+            #modal-media-container .video-fluid {
+                max-height: 80vh;
+                width: 100%;
+                object-fit: contain;
+            }
+            .carousel-indicator-icon {
+                margin-left: 5px;
+                font-size: 0.8em;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column h-100 bg-dark text-white">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 border-bottom border-secondary">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient d-inline">Reza Eftekhari</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <!-- Filter buttons -->
+                    <div class="text-center mb-5">
+                        <div class="btn-group" role="group" aria-label="Project filters">
+                            <button type="button" class="btn btn-primary filter-btn" data-filter="all">All</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="graphic">Graphic Design</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="programming">Programming</button>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gy-5 justify-content-center" id="project-gallery">
+                        <!-- Graphic Design Projects -->
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/Halfblood_cakebox_Layegh_1.jpg"}, {"type": "image", "src": "assets/Halfblood_cakebox_Layegh_2.jpg"}, {"type": "image", "src": "assets/Halfblood_cakebox_Layegh_3.jpg"}, {"type": "image", "src": "assets/Halfblood_cakebox_Layegh_4.jpg"}]' data-title="Cake Mix Packaging" data-description="Packaging design for a ready-mix cake powder.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_cakebox_Layegh_1.jpg" alt="Cake Mix Packaging" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Cake Mix Packaging <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/Halfblood_jam_Layegh_1.jpg"}, {"type": "image", "src": "assets/Halfblood_jam_Layegh_2.jpg"}, {"type": "image", "src": "assets/Halfblood_jam_Layegh_3.jpg"}]' data-title="Jam Label" data-description="Label design for a series of fruit jams.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_jam_Layegh_1.jpg" alt="Jam Label" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Jam Label <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/Halfblood_pickle_Layegh_1.jpg"}, {"type": "image", "src": "assets/Halfblood_pickle_Layegh_2.jpg"}]' data-title="Pickle Label" data-description="Label design for pickled vegetables.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_pickle_Layegh_1.jpg" alt="Pickle Label" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Pickle Label <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/Halfblood_tomatopaste_Layegh_1.jpg"}, {"type": "image", "src": "assets/Halfblood_tomatopaste_Layegh_2.jpg"}]' data-title="Tomato Paste Can" data-description="Can design for tomato paste.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_tomatopaste_Layegh_1.jpg" alt="Tomato Paste Can" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Tomato Paste Can <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_macaroni_Layegh.jpg" data-title="Persian Noodle Packaging" data-description="Packaging design for Iranian pilaf noodles.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_macaroni_Layegh.jpg" alt="Persian Noodle Packaging" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Persian Noodle Packaging</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/Halfblood_cutletbox_Layegh_1.jpg"}, {"type": "image", "src": "assets/Halfblood_cutletbox_Layegh_2.jpg"}]' data-title="Cutlet Mix Packaging" data-description="Packaging design for a ready-mix cutlet powder.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_cutletbox_Layegh_1.jpg" alt="Cutlet Mix Packaging" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Cutlet Mix Packaging <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_label_sarin.jpg" data-title="Sarin Label" data-description="Label design for Sarin products.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_label_sarin.jpg" alt="Sarin Label" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Sarin Label</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_letter_sinakashi.jpg" data-title="Sinakashi Letterhead" data-description="Official letterhead design for Sinakashi.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_letter_sinakashi.jpg" alt="Sinakashi Letterhead" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Sinakashi Letterhead</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_vcard_sinakashi.jpg" data-title="Sinakashi Business Card" data-description="Business card design for Sinakashi.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_vcard_sinakashi.jpg" alt="Sinakashi Business Card" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Sinakashi Business Card</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_logo_zosha.jpg" data-title="Zosha Logo" data-description="Logo design for Zosha.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_logo_zosha.jpg" alt="Zosha Logo" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Zosha Logo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/Halfblood_vcard_tattootik.jpg" data-title="Tattootik Business Card" data-description="Business card design for Tattootik.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/Halfblood_vcard_tattootik.jpg" alt="Tattootik Business Card" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Tattootik Business Card</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/halfblood_logo_ulduz_plast.jpg" data-title="Ulduz Plast Logo" data-description="Logo design for Ulduz Plast, a plastic products company.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/halfblood_logo_ulduz_plast.jpg" alt="Ulduz Plast Logo" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Ulduz Plast Logo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/halfblood_logo_javid.jpg"}, {"type": "image", "src": "assets/halfblood_logo_javid_2.jpg"}]' data-title="Javid Logo" data-description="Logo and brand identity design for Javid.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/halfblood_logo_javid.jpg" alt="Javid Logo" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Javid Logo <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/halfblood_logo_Caren.jpg"}, {"type": "image", "src": "assets/halfblood_logo_Caren_2.jpg"}]' data-title="Caren Logo" data-description="Logo design for Caren, showcasing two variations.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/halfblood_logo_Caren.jpg" alt="Caren Logo" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Caren Logo <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/logo_halfblood (1).avif" data-title="Half-Blood Logo 1" data-description="This is a description for the first Half-Blood logo. It was designed using Adobe Illustrator with a focus on modern and clean aesthetics.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/logo_halfblood (1).avif" alt="Half-Blood Logo 1" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Half-Blood Logo 1</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/logo_halfblood (2).avif" data-title="Half-Blood Logo 2" data-description="Description for the second logo. This design explores a different color palette and typography to convey a different mood.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/logo_halfblood (2).avif" alt="Half-Blood Logo 2" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Half-Blood Logo 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/logo_halfblood (3).avif" data-title="Half-Blood Logo 3" data-description="The third logo in the series. It features a more minimalist approach, suitable for various branding applications.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/logo_halfblood (3).avif" alt="Half-Blood Logo 3" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Half-Blood Logo 3</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="graphic" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="image" data-media-src="assets/halfblood_logo_Andrew_Academy.jpg" data-title="Andrew Academy Logo" data-description="Logo design for Andrew Academy.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/halfblood_logo_Andrew_Academy.jpg" alt="Andrew Academy Logo" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Andrew Academy Logo</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programming Projects -->
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "video", "src": "assets/Halfblood_los_website.mp4"}, {"type": "video", "src": "assets/Halfblood_los_website_responsive.mp4"}]' data-title="LOS Website" data-description="A fully responsive website for a client, showcasing both desktop and mobile versions.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <video class="card-video-top" src="assets/Halfblood_los_website.mp4" muted loop playsinline></video>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">LOS Website <i class="bi bi-collection-play carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="video" data-media-src="assets/Halfblood_website.mp4" data-title="Personal Website" data-description="The development process of my personal portfolio website, built with Bootstrap and custom JavaScript.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <video class="card-video-top" src="assets/Halfblood_website.mp4" muted loop playsinline></video>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Personal Website</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="carousel" data-media-src='[{"type": "image", "src": "assets/HalfBlood_HooshmandApp_ Login.jpg"}, {"type": "image", "src": "assets/HalfBlood_HooshmandApp_ window.jpg"}, {"type": "image", "src": "assets/HalfBlood_HooshmandApp_ Dashborad.jpg"}]' data-title="Hooshmand App" data-description="This project, which was also registered in the Science and Technology Park, was carried out in collaboration with one of the university's accounting professors. Built with python and pyQt5.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <img class="card-img-top" src="assets/HalfBlood_HooshmandApp_ Dashborad.jpg" alt="Hooshmand App" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Hooshmand App <i class="bi bi-images carousel-indicator-icon"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="video" data-media-src="assets/HalfBlood_MyCatalog_app.mp4" data-title="MyCatalog Android App" data-description="A native Android application for cataloging items. Developed using flutter.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <video class="card-video-top" src="assets/HalfBlood_MyCatalog_app.mp4" muted loop playsinline></video>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">MyCatalog Android App</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="video" data-media-src="assets/HalfBlood_MyCatalog_Windows.mp4" data-title="MyCatalog Windows App" data-description="A desktop application for Windows, built with Python and the Tkinter library, providing a seamless user experience for catalog management.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <video class="card-video-top" src="assets/HalfBlood_MyCatalog_Windows.mp4" muted loop playsinline></video>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">MyCatalog Windows App</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 project-item" data-category="programming" data-bs-toggle="modal" data-bs-target="#projectModal" data-media-type="video" data-media-src="assets/HalfBlood_petro.mp4" data-title="Petrochemical App Intro" data-description="This Windows-based software was responsible for collecting data and calculating the input of raw materials and the final product.">
+                            <div class="card h-100 shadow border-0 bg-black project-card">
+                                <video class="card-video-top" src="assets/HalfBlood_petro.mp4" muted loop playsinline></video>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-center text-white">Petrochemical App Intro</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto border-top border-secondary">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white-50">Copyright &copy; Reza Eftekhari 2024</div></div>
+                    <div class="col-auto">
+                        <a class="small text-white-50" href="#!">Privacy</a>
+                        <span class="mx-1 text-white-50">&middot;</span>
+                        <a class="small text-white-50" href="#!">Terms</a>
+                        <span class="mx-1 text-white-50">&middot;</span>
+                        <a class="small text-white-50" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-black text-white">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div id="modal-media-container" class="col-md-8">
+                                <!-- Media (Image, Video, or Carousel) will be injected here -->
+                            </div>
+                            <div class="col-md-4">
+                                <h3 id="modal-title" class="fw-bolder"></h3>
+                                <p id="modal-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const projectItems = document.querySelectorAll('.project-item');
+                const projectModal = document.getElementById('projectModal');
+                const modalMediaContainer = document.getElementById('modal-media-container');
+                const modalTitle = document.getElementById('modal-title');
+                const modalDescription = document.getElementById('modal-description');
+                const projectModalLabel = document.getElementById('projectModalLabel');
+
+                // Autoplay videos on hover
+                document.querySelectorAll('.project-card video').forEach(video => {
+                    video.addEventListener('mouseenter', () => { video.play().catch(e => console.log("Hover play failed")); });
+                    video.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+                });
+
+                // Filter functionality
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        filterButtons.forEach(btn => btn.classList.replace('btn-primary', 'btn-outline-primary'));
+                        this.classList.replace('btn-outline-primary', 'btn-primary');
+                        const filter = this.getAttribute('data-filter');
+                        projectItems.forEach(item => {
+                            item.style.display = (filter === 'all' || item.getAttribute('data-category') === filter) ? 'block' : 'none';
+                        });
+                    });
+                });
+
+                // Modal content population
+                projectModal.addEventListener('show.bs.modal', function (event) {
+                    const button = event.relatedTarget.closest('.project-item');
+                    const mediaType = button.getAttribute('data-media-type');
+                    const mediaSrcAttr = button.getAttribute('data-media-src');
+                    const title = button.getAttribute('data-title');
+                    const description = button.getAttribute('data-description');
+
+                    projectModalLabel.textContent = title;
+                    modalTitle.textContent = title;
+                    modalDescription.textContent = description;
+
+                    modalMediaContainer.innerHTML = ''; // Clear previous media
+
+                    if (mediaType === 'image') {
+                        const img = document.createElement('img');
+                        img.src = mediaSrcAttr;
+                        img.className = 'img-fluid rounded';
+                        modalMediaContainer.appendChild(img);
+                    } else if (mediaType === 'video') {
+                        const video = document.createElement('video');
+                        video.src = mediaSrcAttr;
+                        video.className = 'video-fluid rounded';
+                        video.controls = true;
+                        video.autoplay = true;
+                        modalMediaContainer.appendChild(video);
+                    } else if (mediaType === 'carousel') {
+                        const mediaSrcs = JSON.parse(mediaSrcAttr.replace(/'/g, '"'));
+                        const carouselId = 'modalCarousel';
+                        const carouselHTML = `
+                            <div id="${carouselId}" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    ${mediaSrcs.map((media, index) => {
+                                        let itemHTML = '';
+                                        if (media.type === 'image') {
+                                            itemHTML = `<img src="${media.src}" class="d-block w-100" alt="Slide ${index + 1}">`;
+                                        } else if (media.type === 'video') {
+                                            itemHTML = `<video src="${media.src}" class="d-block w-100" controls></video>`;
+                                        }
+                                        return `<div class="carousel-item ${index === 0 ? 'active' : ''}">${itemHTML}</div>`;
+                                    }).join('')}
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>`;
+                        modalMediaContainer.innerHTML = carouselHTML;
+                    }
+                });
+
+                // Stop media when modal is closed
+                projectModal.addEventListener('hide.bs.modal', function () {
+                    modalMediaContainer.querySelectorAll('video').forEach(video => video.pause());
+                });
+            });
+        </script>
+    </body>
+</html>
